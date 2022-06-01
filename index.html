@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>    
+    <title>Login</title>
+</head>
+<body>
+    <form action="#">
+        <main class="container">        
+            <div class="box">
+                <h2>Entrar</h2>            
+                <input type="text" id="user" class="inputClass" placeholder="Digite seu CPF" maxlength="11"/>          
+                <input type="password" id="pass" class="inputClass" placeholder="Password" />                     
+                <button type="submit" class="btn">Entrar</button>   
+                <a href="#" onclick="mudar('clickDiv')">Não é cadastrado? Clique Aqui!</a>                              
+            </div>                 
+            <div id="clickDiv" class="box" name="form-div">
+                <h2>Cadastrar</h2>
+                <input type="text" class="inputClass" placeholder="CPF*" required maxlength="11"/>            
+                <input type="text" class="inputClass" placeholder="Nome Completo" />
+                <input type="text" class="inputClass" placeholder="Telefone" />
+                <input type="text" class="inputClass" placeholder="Endereço" />
+                <input type="password" class="inputClass" id="password" placeholder="Password*" required maxlength="7"/>
+                <input type="password" class="inputClass"  id="confirme_password" placeholder="Confirme Password*" required maxlength="7"/>   
+                <button type="submit" class="btn" onclick="return validadePassword()">Cadastrar</button>           
+            </div>        
+        </main>
+    </form>
+</body>
+</html>
